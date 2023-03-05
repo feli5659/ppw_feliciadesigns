@@ -11,7 +11,7 @@
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
-  transition: all 1.5s;
+  transition: all 1s;
 }
 
 .show {
@@ -55,11 +55,16 @@ li.nav-item:nth-child(4) > a:nth-child(1) {
 /* general------------------------------------------------- */
 img {
   max-width: 100%;
+  padding-block: 10px;
+}
+video {
+  max-width: 100%;
 }
 
 h1 {
-  font-size: 5rem;
-  line-height: 3.1rem;
+  margin-inline: 20px;
+  font-size: 4rem;
+  padding-bottom: 30px;
 }
 h2 {
   font-size: 1.7rem;
@@ -78,6 +83,14 @@ p {
   margin-left: 20px;
 }
 
+.title-spacing {
+  margin-top: 100px;
+}
+
+section {
+  padding-block: 1.5rem;
+}
+
 /* section 1 ------------------------------------------------- */
 
 .title img {
@@ -94,13 +107,6 @@ p {
   margin: 20px;
 }
 
-.black-grafic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
 .hide {
   display: none;
 }
@@ -109,9 +115,7 @@ p {
 }
 
 .skills {
-  /* padding-block: 40px; */
-  opacity: 80%;
-  margin: 20px;
+  opacity: 70%;
 }
 
 /* section 2 ------------------------------------------------- */
@@ -121,6 +125,10 @@ p {
   margin-inline: 20px;
   border-radius: 0;
   box-shadow: 5px 5px 5px rgba(55, 55, 55, 0.175);
+  cursor: pointer;
+}
+.card:hover {
+  background-color: lightgray;
 }
 
 .card_title {
@@ -131,7 +139,6 @@ p {
 
 #goals ul {
   list-style: none;
-  padding-left: 0;
 }
 #goals ul > li {
   padding-block: 20px;
@@ -192,6 +199,10 @@ p {
 #contact h3 {
   padding-bottom: 0;
   opacity: 80%;
+}
+
+.pictures {
+  margin-inline: 0;
 }
 
 /* footer ------------------------------------------------- */
@@ -285,6 +296,25 @@ footer p {
   .sitemap div {
     margin-inline: 10%;
   }
+
+  /* digital drawing----------------------- */
+  .digitaldrawing > h3:nth-child(2) {
+    grid-column: 1;
+  }
+
+  .digitaldrawing > div:nth-child(3) {
+    display: grid;
+    grid-column: 2;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .project-description p {
+    grid-column: 2;
+  }
+  .project-description h3 {
+    padding: 0;
+  }
 }
 
 /* MEDIA Q DESKTOP ------------------------------------------------- */
@@ -311,6 +341,7 @@ footer p {
   .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
   }
 
   .title {
@@ -326,17 +357,9 @@ footer p {
 
   /* desktop - section 2 ------------------------------------------------- */
 
-  #my-work {
-    display: flex;
-    margin-inline: 105px;
-    gap: 60xp;
-  }
-
   /* desktop - section 3 + 4 ------------------------------------------------- */
 
-  #about,
-  #contact,
-  #goals {
+  section {
     margin-inline: 112px;
   }
 

@@ -30,26 +30,26 @@ function displayDefaultImg() {
 
 // animation iterator on speechbubble text
 
-let iterator = 0;
+// let iterator = 0;
 
-let letter;
-const typewriter = document.querySelector("#typewriter");
-let typewriterText = typewriter.textContent;
-const maxNumberOfItems = typewriterText.length;
-// empties #typewriter content before the loop
-typewriter.textContent = "";
+// let letter;
+// const typewriter = document.querySelector("#typewriter");
+// let typewriterText = typewriter.textContent;
+// const maxNumberOfItems = typewriterText.length;
+// // empties #typewriter content before the loop
+// typewriter.textContent = "";
 
-function initLoop() {
-  loop();
-}
+// function initLoop() {
+//   loop();
+// }
 
-function loop() {
-  iterator++;
-  letter = "";
+// function loop() {
+//   iterator++;
+//   letter = "";
 
-  if (iterator <= maxNumberOfItems) {
-    setTimeout(loop, 200);
-    letter = typewriterText[iterator - 1];
-    typewriter.textContent += letter;
-  }
-}
+//   if (iterator <= maxNumberOfItems) {
+//     setTimeout(loop, 200);
+//     letter = typewriterText[iterator - 1];
+//     typewriter.textContent += letter;
+//   }
+// }
