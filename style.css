@@ -5,6 +5,27 @@
   color: #202020;
 }
 
+/* scroll function -------------- */
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.5s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+/* navbar------------------------------------------------- */
 .navbar {
   padding-top: 20px;
 }
@@ -27,7 +48,11 @@
 li.nav-item:nth-child(4) > a:nth-child(1) {
   color: white;
 }
+.logo {
+  max-width: 150px;
+}
 
+/* general------------------------------------------------- */
 img {
   max-width: 100%;
 }
@@ -36,10 +61,21 @@ h1 {
   font-size: 5rem;
   line-height: 3.1rem;
 }
-
-.logo {
-  max-width: 150px;
+h2 {
+  font-size: 1.7rem;
 }
+
+h3 {
+  color: #880f0a;
+  padding-block: 20px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+/* section 1 ------------------------------------------------- */
 
 .title img {
   max-width: 80%;
@@ -49,53 +85,79 @@ h1 {
 }
 
 .title {
-  padding-block: 40px;
+  padding-top: 40px;
 }
 .frontpage {
   margin: 20px;
 }
 
 .black-grafic {
-  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.hide {
+  display: none;
+}
+.show-text {
+  display: block;
 }
 
 .skills {
-  padding-block: 40px;
+  /* padding-block: 40px; */
   opacity: 80%;
   margin: 20px;
 }
 
-h3 {
-  color: #880f0a;
-  padding-block: 20px;
-}
-h2 {
-  font-size: 1.7rem;
-}
+/* section 2 ------------------------------------------------- */
+
 .card {
-  /* border: solid black 1px; */
   margin-block: 20px;
   margin-inline: 20px;
   border-radius: 0;
   box-shadow: 5px 5px 5px rgba(55, 55, 55, 0.175);
 }
+
 .card_title {
-  /* border-top: solid black 1px; */
   padding: 8px;
   text-align: center;
   opacity: 80%;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 300;
-}
+/* animation maequee----------------------- */
 
 .quote {
   text-align: center;
   opacity: 60%;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px;
+  margin-inline: 40px; */
+  font-size: 5rem;
 }
+
+.marquee {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll 10s infinite linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* section 3+4 ------------------------------------------------- */
 
 #about,
 #contact {
@@ -112,6 +174,8 @@ p {
   padding-bottom: 0;
   opacity: 80%;
 }
+
+/* footer ------------------------------------------------- */
 
 footer {
   background-color: #202020;
@@ -137,8 +201,12 @@ footer p {
   margin-top: 80px;
   margin-bottom: 40px;
 }
+/* MEDIA Q IPAD ------------------------------------------------- */
 
 @media (min-width: 580px) {
+  .title img {
+    max-width: 60%;
+  }
   .title > h2:nth-child(2) {
     padding-left: 187px;
   }
@@ -151,10 +219,13 @@ footer p {
     font-size: 1.2rem;
     text-align: center;
   }
+  /* ipad - section 2 ------------------------------------------------- */
 
   #my-work {
     display: flex;
   }
+
+  /* ipad - section 3 + 4 ------------------------------------------------- */
 
   #about,
   #contact {
@@ -169,12 +240,19 @@ footer p {
   #contact > div:nth-child(2) > h3:nth-child(1) {
     padding-top: 0;
   }
-  .grafic_white,
-  .black-grafic {
+
+  .pictures {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* ipad - footer ------------------------------------------------- */
+
+  .grafic_white {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: 20%;
   }
   .sitemap {
     display: flex;
@@ -183,16 +261,29 @@ footer p {
   .sitemap div {
     margin-inline: 10%;
   }
-
-  .grafic_white {
-    width: 20%;
-  }
-  .pictures {
-    display: flex;
-  }
 }
 
+/* MEDIA Q DESKTOP ------------------------------------------------- */
+
 @media (min-width: 1000px) {
+  /* desktop - general ------------------------------------------------- */
+
+  section {
+    padding-block: 2rem;
+  }
+  /* desktop - navbar ------------------------------------------------- */
+
+  .logo {
+    max-width: 18%;
+  }
+
+  li {
+    font-size: 1.5rem;
+    padding-inline: 30px;
+  }
+
+  /* desktop - section 1 ------------------------------------------------- */
+
   .frontpage {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -205,28 +296,28 @@ footer p {
   .title > h2:nth-child(2) {
     padding-left: 159px;
   }
-
-  .logo {
-    max-width: 18%;
+  .title img {
+    max-width: 80%;
   }
 
-  li {
-    font-size: 1.5rem;
-    padding-inline: 30px;
-  }
-  .grafic_white {
-    width: 20%;
-  }
+  /* desktop - section 2 ------------------------------------------------- */
+
   #my-work {
     display: flex;
     margin-inline: 105px;
     gap: 60xp;
   }
+
+  /* desktop - section 3 + 4 ------------------------------------------------- */
+
   #about,
   #contact {
     margin-inline: 112px;
   }
-  section {
-    padding-block: 2rem;
+
+  /* desktop - footer ------------------------------------------------- */
+
+  .grafic_white {
+    width: 20%;
   }
 }

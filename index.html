@@ -32,9 +32,9 @@
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">my work</a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Front End</a></li>
-                    <li><a class="dropdown-item" href="#">Digital Design</a></li>
-                    <li><a class="dropdown-item" href="#">Content Creation</a></li>
+                    <li><a class="dropdown-item" href="#">front end</a></li>
+                    <li><a class="dropdown-item" href="#">digital design</a></li>
+                    <li><a class="dropdown-item" href="#">digital drawing</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
@@ -49,22 +49,28 @@
         </div>
       </nav>
     </header>
-    <section class="frontpage">
+    <section class="frontpage hidden">
       <div class="title">
         <img src="name.svg" alt="" />
         <h2>multimedia designer</h2>
       </div>
-      <img class="black-grafic" src="black_grafic_1-1.png" alt="" />
+      <!-- <h2 id="typewriter" class="typewritten hide">
+        Hi!🤘🏻 <br />
+        I'm Felicia. <br />
+        Welcome to my world!
+      </h2> -->
+
+      <img id="black-grafic" src="black_grafic_1-1.png" onmouseover="displaySpeechBubble()" onmouseout="displayDefaultImg()" alt="" />
     </section>
-    <div class="skills">
+    <div class="skills hidden">
       <h3>frontend design</h3>
       <h3>digital design</h3>
       <h3>content creation</h3>
       <h3>country/rock music lover & musician</h3>
     </div>
 
-    <section id="my-work">
-      <div class="card">
+    <section id="my-work" class="hidden">
+      <div class="card hidden">
         <div>
           <img src="placeholder.png" alt="" />
         </div>
@@ -72,7 +78,7 @@
           <h3>frontend design</h3>
         </div>
       </div>
-      <div class="card">
+      <div class="card hidden">
         <div>
           <img src="placeholder.png" alt="" />
         </div>
@@ -80,7 +86,7 @@
           <h3>digital design</h3>
         </div>
       </div>
-      <div class="card">
+      <div class="card hidden">
         <div>
           <img src="placeholder.png" alt="" />
         </div>
@@ -89,7 +95,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="hidden">
       <h2>about</h2>
       <p>My name is Felicia Hetman, and I’m a passionate frontend designer currently studying multimedia design at KEA. As a design-driven individual, I’ve always been drawn to the world of digital design and how it can be used to enhance user experiences.</p>
       <p>Throughout my studies, I’ve developed a strong skill set in areas such as web development, the design process, user interface design and graphic design. I’m constantly seeking out new challenges and opportunities to improve my abilities, both in and out of the classroom.</p>
@@ -97,13 +103,22 @@
       <p>Whether it’s working on a new website or creating a digital campaign, I’m always excited to tackle new projects and bring my creative vision to life. I’m eager to join a team of like-minded professionals who share my passion for design and are committed to pushing the boundaries of what’s possible.</p>
       <p>In short, I’m a frontend designer with a love for all things digital. I’m hungry to learn more and excited to see where my career takes me.</p>
     </section>
-    <h2 class="quote">~ writing and playing music makes my world go round ~</h2>
+    <section id="goals" class="hidden">
+      <h2>goals</h2>
+      <ul>
+        <li>Continuous improvement of my skills and knowledge within HTML, CSS and JavaScript</li>
+        <li>Learning and staying Up-to-Date with Technology</li>
+        <li>Networking and Collaboration</li>
+      </ul>
+    </section>
+    <h2 class="quote marquee"><span>~ writing and playing music makes my world go round ~</span></h2>
+
     <section class="pictures">
       <img src="1-1_picture-2.jpg" alt="" />
       <img src="1-1-picture.jpg" alt="" />
       <img src="1-1_pictures-3.jpg" alt="" />
     </section>
-    <section id="contact">
+    <section id="contact" class="hidden">
       <h2>contact</h2>
       <div>
         <h3>email</h3>
