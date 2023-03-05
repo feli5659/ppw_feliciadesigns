@@ -63,16 +63,19 @@ h1 {
 }
 h2 {
   font-size: 1.7rem;
+  margin-left: 20px;
 }
 
 h3 {
   color: #880f0a;
   padding-block: 20px;
+  margin-left: 20px;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  margin-left: 20px;
 }
 
 /* section 1 ------------------------------------------------- */
@@ -126,6 +129,20 @@ p {
   opacity: 80%;
 }
 
+#goals ul {
+  list-style: none;
+  padding-left: 0;
+}
+#goals ul > li {
+  padding-block: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+#goals > ul:nth-child(2) > li:nth-child(1) {
+  padding-top: 0;
+}
+
 /* animation maequee----------------------- */
 
 .quote {
@@ -160,13 +177,15 @@ p {
 /* section 3+4 ------------------------------------------------- */
 
 #about,
-#contact {
+#contact,
+#goals {
   padding-inline: 20px;
   margin-block: 9rem;
 }
 
 #about h2,
-#contact h2 {
+#contact h2,
+#goals h2 {
   padding-bottom: 2.5rem;
 }
 
@@ -201,6 +220,12 @@ footer p {
   margin-top: 80px;
   margin-bottom: 40px;
 }
+
+/* digital drawing */
+.digitaldrawing div {
+  padding-block: 40px;
+}
+
 /* MEDIA Q IPAD ------------------------------------------------- */
 
 @media (min-width: 580px) {
@@ -227,8 +252,7 @@ footer p {
 
   /* ipad - section 3 + 4 ------------------------------------------------- */
 
-  #about,
-  #contact {
+  .grid-1-2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -241,7 +265,7 @@ footer p {
     padding-top: 0;
   }
 
-  .pictures {
+  .column-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -284,7 +308,7 @@ footer p {
 
   /* desktop - section 1 ------------------------------------------------- */
 
-  .frontpage {
+  .grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -311,7 +335,8 @@ footer p {
   /* desktop - section 3 + 4 ------------------------------------------------- */
 
   #about,
-  #contact {
+  #contact,
+  #goals {
     margin-inline: 112px;
   }
 
