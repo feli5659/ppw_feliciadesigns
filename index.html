@@ -15,38 +15,28 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="logo.png" alt="" />
-          </a>
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#about">about</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">my work</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="frontend.html">front end</a></li>
-                    <li><a class="dropdown-item" href="digitaldesign.html">digital design</a></li>
-                    <li><a class="dropdown-item" href="digitaldrawing.html">digital drawing</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">contact</a>
-                </li>
-                <li class="nav-item cv">
-                  <a class="nav-link" href="#">cv</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <a href="index.html">
+        <img class="logo" src="logo.png" alt="" />
+      </a>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li>
+            <a href="#mywork">my work ▿</a>
+            <ul class="dropdown">
+              <li><a class="drop-a" href="frontend.html">front end design</a></li>
+              <li><a class="drop-a" href="digitaldesign.html">digital design</a></li>
+              <li><a class="drop-a" href="digitaldrawing.html">digital drawing</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">contact</a></li>
+          <li class="cv"><a href="cv-multimedia-felicia.pdf">cv</a></li>
+        </ul>
       </nav>
     </header>
     <section class="frontpage grid-2 hidden">
@@ -74,7 +64,7 @@
     <section id="my-work" class="hidden">
       <div class="card hidden">
         <div>
-          <img src="game_mockup.png" alt="" />
+          <a href="frontend.html"><img src="game_mockup.png" alt="" /></a>
         </div>
         <div class="card_title">
           <h3>frontend design</h3>
@@ -82,7 +72,7 @@
       </div>
       <div class="card hidden">
         <div>
-          <img src="kleines_mockup.png" alt="" />
+          <a href="digitaldesign.html"><img src="kleines_mockup.png" alt="" /></a>
         </div>
         <div class="card_title">
           <h3>digital design</h3>
@@ -90,7 +80,7 @@
       </div>
       <div class="card hidden">
         <div>
-          <img src="emma_mockup.png" alt="" />
+          <a href="digitaldrawing.html"> <img src="emma_mockup.png" alt="" /></a>
         </div>
         <div class="card_title">
           <h3>digital drawing</h3>
@@ -139,14 +129,16 @@
       <div class="sitemap">
         <div>
           <h2>my work</h2>
-          <h3>frontend design</h3>
-          <h3>digital design</h3>
-          <h3>content creation</h3>
+          <a href="frontend.html"><h3>front end design</h3></a>
+          <a href="digitaldesign.html"><h3>digital design</h3></a>
+          <a href="digitaldrawing.html"><h3>content creation</h3></a>
         </div>
-        <div><h2>about</h2></div>
+        <div>
+          <a href="#about"><h2>about</h2></a>
+        </div>
         <div>
           <h2>contact</h2>
-          <h3>LinkedIn</h3>
+          <a href="#"><h3>LinkedIn</h3></a>
         </div>
       </div>
 

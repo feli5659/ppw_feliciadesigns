@@ -15,43 +15,33 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo" src="logo.png" alt="" />
-          </a>
-          <div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#about">about</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">my work</a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="frontend.html">front end</a></li>
-                    <li><a class="dropdown-item" href="digitaldesign.html">digital design</a></li>
-                    <li><a class="dropdown-item" href="digitaldrawing.html">digital drawing</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">contact</a>
-                </li>
-                <li class="nav-item cv">
-                  <a class="nav-link" href="#">cv</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <a href="index.html">
+        <img class="logo" src="logo.png" alt="" />
+      </a>
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li>
+            <a href="#mywork">my work ▿</a>
+            <ul class="dropdown">
+              <li><a class="drop-a" href="frontend.html">front end design</a></li>
+              <li><a class="drop-a" href="digitaldesign.html">digital design</a></li>
+              <li><a class="drop-a" href="digitaldrawing.html">digital drawing</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">contact</a></li>
+          <li class="cv"><a href="cv-multimedia-felicia.pdf">cv</a></li>
+        </ul>
       </nav>
     </header>
     <section class="digitaldesign">
       <h2>digital design</h2>
-      <img src="" alt="" />
+      <video autoplay muted src="kleines_mockup_video.mp4"></video>
     </section>
     <section class="project-description">
       <h3>project description</h3>
