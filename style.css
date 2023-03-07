@@ -191,6 +191,13 @@ p {
   margin-left: 20px;
 }
 
+p > a{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  margin-left: 0;
+  color: #202020;
+}
+
 .title-spacing {
   margin-top: 100px;
 }
